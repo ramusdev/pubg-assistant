@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Pubg Assistant</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_web_second">WebActivitySecond</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+
+    <!-- Tollbar menu -->
+    <string name="toolbar_main">Main</string>
+    <string name="toolbar_news">NEWS</string>
+    <string name="toolbar_player">PLAYERS</string>
+    <string name="toolbar_statistics">STATISTICS</string>
+    <string name="toolbar_compare">COMPARE</string>
+    <string name="toolbar_twitter">TWITTER</string>
+    <string name="toolbar_wallpapers">WALLPAPERS</string>
+    <string name="toolbar_donate">DONATE</string>
+    <string name="toolbar_settings">SETTINGS</string>
+    <string name="toolbar_about">ABOUT</string>
+    <string name="title_activity_my_application">MyApplication</string>
+
+    <!-- Donate -->
+    <string name="donate_button_one">Bronze</string>
+    <string name="donate_button_two">Silver</string>
+    <string name="donate_button_three">Gold</string>
+    <string name="donate_button_four">Diamond</string>
+    <string name="donate_text">
+    <![CDATA[
+       <font color=#f3c943>Hi! Support the app with a donation!</font><br><br>
+        Pubg Assistant is completely free and supported only by your donations.<br><br>
+        If you liked the application, support it with a donation, it motivates us to further improve.
+    ]]>
+    </string>
+
+    <!-- Compare -->
+    <string name="compare_text">
+    <![CDATA[
+        <font color=#f3c943>How to compare two players?</font><br><br>
+        To compare two players choose players from first drop down and second user from bottom drop down. After that push compare button<br><br>
+    ]]>
+    </string>
+
+    <!-- Players -->
+    <string name="players_text">
+        <![CDATA[
+           <font color=#f3c943>How to track player statistics?</font><br><br>
+            To track statistics, enter a player name in the field.<br><br> Statistics are updated once a day.
+        ]]>
+    </string>
+
+    <!-- Settings -->
+    <string name="settings_text">
+        <![CDATA[
+           <font color=#712123> Premium feature.</font><br><br>
+            Want to turn off ads for 24 hours in the app? Please watch the video!
+        ]]>
+    </string>
+    <string name="settings_button">Disable ads for 24 hours</string>
+    <string name="settings_message">Ads disabled for 24 hours</string>
+
+    <!-- About -->
+    <string name="about_text">
+    <![CDATA[
+        <font color=#f3c943>This application is not a product of KRAFTON.</font><br><br>
+        The app contains information about the game PUBG
+    ]]>
+    </string>
+    <string name="about_text_2">
+    <![CDATA[
+        <font color=#f3c943>Privacy Policy <a href="https://edgenews.ru/android/pubgassistant/privacy/privacy_policy.html">read.</a></font><br><br>
+        The copyright of the images and materials contained is owned by KRAFTON and is the intellectual property of KRAFTON: © 2021 KRAFTON. All rights reserved.<br><br>
+        PUBG and the PUBG logo are registered trademarks or trademarks of KRAFTON.
+    ]]>
+    </string>
+    <string name="about_text_3">
+    <![CDATA[
+        - Current version: 0.0.2<br>
+        - Developer: RB dev.<br>
+        - Contact: ram219219@gmail.com
+    ]]>
+    </string>
+
+    <!-- News link -->
+    <string name="news_link">https://www.ea.com/games/apex-legends/news</string>
+
+    <!-- Wallpaper -->
+    <string name="wallpaper_set">Set</string>
+    <string name="wallpaper_downloading">Downloading ...</string>
+    <string name="wallpaper_loaded">Loaded</string>
+
+    <!-- Legend -->
+    <string name="legends_json_dir">Legends/en/legends_en.json</string>
+
+    <string name="hello_world">Hello Square World!</string>
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="seasons_pc" translatable="false">
+        <item>Season 13</item>
+        <item>Season 12</item>
+        <item>Season 11</item>
+        <item>Season 10</item>
+        <item>Season 9</item>
+    </string-array>
+</resources>

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Seer",
+    "image": "legend_seer",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_seer_en.html",
+    "tagline": "Ambush Artist",
+    "description": "Before his birth, it was foretold that Seer would bring pain and suffering to the world--and the night he was born, a meteor barreled across the sky and struck his world’s moon. "
+  },
+  {
+    "name": "Fuse",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_fuse_en.html",
+    "image": "legend_fuse",
+    "tagline": "Bombastic Explosives Expert",
+    "description": "Ladies’ man, man’s man, and all-round manly man,"
+  },
+  {
+    "name": "Horizon",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_horizon_en.html",
+    "image": "legend_horizon",
+    "tagline": "Gravitational Manipulator",
+    "description": "Almost a century ago, the Outlands were dangling on the edge of a cataclysmic energy crisis"
+  },
+  {
+    "name": "Lifeline",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_lifeline_en.html",
+    "image": "legend_lifeline",
+    "tagline": "Combat Medic",
+    "description": "Ajay Che, aka Lifeline, isn’t someone you would expect to find in the Apex Games. "
+  },
+  {
+    "name": "Loba",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_loba_en.html",
+    "image": "legend_loba",
+    "tagline": "Translocating Thief",
+    "description": "When Loba was nine, she looked on as simulacrum hitman Revenant killed her family. Left with nothing, Loba survived by picking pockets."
+  },
+  {
+    "name": "Mirage",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_mirage_en.html",
+    "image": "legend_mirage",
+    "tagline": "Holographic Trickster",
+    "description": "Mirage is the kind of guy who likes to stand out. The youngest of four brothers, he perfected the art of fooling around to get attention. "
+  },
+  {
+    "name": "Octane",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_octane_en.html",
+    "image": "legend_octane",
+    "tagline": "High-Speed Daredevil",
+    "description": "One day, Octavio Silva was bored. In fact, he was bored most days. Son of the preoccupied CEO of Silva Pharmaceuticals and wanting for nothing in life, "
+  },
+  {
+    "name": "Pathfinder",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_pathfinder_en.html",
+    "image": "legend_pathfinder",
+    "tagline": "Forward Scout",
+    "description": "Pathfinder is the picture of optimism, despite his circumstances. A MRVN (Mobile Robotic Versatile eNtity) modified to specialize in location scouting and surveying, "
+  },
+  {
+    "name": "Rampart",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_rampart_en.html",
+    "image": "legend_rampart",
+    "tagline": "Amped Modder",
+    "description": "Rampart is a blue-collar, private business owner who just needs a big gun and a backpack full of scrap metal to get by in the dangerous, wild west world of the Outlands. "
+  },
+  {
+    "name": "Revenant",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_revenant_en.html",
+    "image": "legend_revenant",
+    "tagline": "Synthetic Nightmare",
+    "description": "Revenant used to be human. He used to be the greatest hitman the Mercenary Syndicate ever had."
+  },
+  {
+    "name": "Bangalore",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_bangalore_en.html",
+    "image": "legend_bangalore",
+    "tagline": "Professional Soldier",
+    "description": "Born into a military family where she, her parents, and her four older brothers all served with the IMC, Bangalore has been an exceptional soldier her whole life."
+  },
+  {
+    "name": "Bloodhound",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_bloodhound_en.html",
+    "image": "legend_bloodhound",
+    "tagline": "Technological Tracker",
+    "description": "Bloodhound is known across the Outlands as one of the greatest game hunters the Frontier has ever seen."
+  },
+  {
+    "name": "Caustic",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_caustic_en.html",
+    "image": "legend_caustic",
+    "tagline": "Toxic Trapper",
+    "description": "Alexander Nox used to be one of the brightest scientists in the employ of Humbert Labs, the Frontier’s leading manufacturer of pesticide gases."
+  },
+  {
+    "name": "Crypto",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_crypto_en.html",
+    "image": "legend_crypto",
+    "tagline": "Surveillance Expert",
+    "description": "Crypto specializes in secrets. A brilliant hacker and encryption expert, he uses aerial drones to spy on his opponents in the Apex Arena without being seen."
+  },
+  {
+    "name": "Gibraltar",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_gibraltar_en.html",
+    "image": "legend_gibraltar",
+    "tagline": "Shielded Fortress",
+    "description": "Gibraltar is a gentle giant with a wild side. The son of two SARAS (Search and Rescue Association of Solace) volunteers"
+  },
+  {
+    "name": "Valkyrie",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_valkyrie_en.html",
+    "image": "legend_valkyrie",
+    "tagline": "Winged Avenger",
+    "description": "Bold, brash, fiery and fierce, Kairi Imahara isn’t above greasing palms and bending the law. When she was a child, she stole a Titan."
+  },
+  {
+    "name": "Wattson",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_wattson_en.html",
+    "image": "legend_wattson",
+    "tagline": "Static Defender",
+    "description": "Natalie “Wattson” Paquette is a familiar face in the Apex Games, though for a different reason than most."
+  },
+  {
+    "name": "Wraith",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/en/legend_wraith_en.html",
+    "image": "legend_wraith",
+    "tagline": "Interdimensional Skirmisher",
+    "description": "Wraith is a whirlwind fighter, able to execute deadly attacks and manipulate spacetime by opening rifts in the fabric of reality — but those abilities came at a price. "
+  }
+]

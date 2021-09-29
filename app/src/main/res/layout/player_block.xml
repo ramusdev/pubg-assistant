@@ -1,0 +1,70 @@
+<LinearLayout
+    android:id="@+id/player_linear_block"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/player_linear_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="PLAYER NAME"
+            android:layout_toRightOf="@id/player_image"
+            android:textColor="@color/yellow_light"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_centerVertical="true"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_user"
+            app:tint="@color/yellow_light" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/player_linear_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/player_info"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:paddingTop="-1dp"
+            android:paddingBottom="-1dp"
+            android:paddingLeft="-1dp"
+            android:paddingRight="-1dp"
+            android:layout_marginRight="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_info_click"
+            android:textColor="@drawable/text_info_pressed"
+            android:text="Info"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/player_delete"
+            android:layout_toRightOf="@id/player_info"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:paddingTop="-1dp"
+            android:paddingBottom="-1dp"
+            android:paddingLeft="-1dp"
+            android:paddingRight="-1dp"
+            android:layout_marginLeft="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_delete_click"
+            android:textColor="@drawable/text_delete_pressed"
+            android:text="Delete"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

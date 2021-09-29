@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Сиар",
+    "image": "legend_seer",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_seer_ru.html",
+    "tagline": "Мастер засад",
+    "description": "Ещё до его рождения было предсказано, что Сиар привнесёт в мир только боль и страдание, и в ночь, когда он родился, небо рассёк пролетающий метеор и ударил по луне его родной планеты. "
+  },
+  {
+    "name": "Фьюз",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_fuse_ru.html",
+    "image": "legend_fuse",
+    "tagline": "Бомбический эксперт по взрывчатке",
+    "description": "Любитель женщин, свой братан для мужчин и просто Мужик с большой буквы."
+  },
+  {
+    "name": "Хорайзон",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_horizon_ru.html",
+    "image": "legend_horizon",
+    "tagline": "Повелительница гравитации",
+    "description": "Почти столетие назад Внешние земли балансировали на грани катастрофического энергетического кризиса."
+  },
+  {
+    "name": "Лайфлайн",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_lifeline_ru.html",
+    "image": "legend_lifeline",
+    "tagline": "Боевой медик>",
+    "description": "Аджей Че, известная как Лайфлайн, — не тот человек, которого ожидаешь увидеть на Играх Apex."
+  },
+  {
+    "name": "Лоба",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_loba_ru.html",
+    "image": "legend_loba",
+    "tagline": "Телепортирующийся вор",
+    "description": "Когда Лобе было девять, симулякр-убийца Ревенант убил её семью, а ей оставалось только смотреть."
+  },
+  {
+    "name": "Мираж",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_mirage_ru.html",
+    "image": "legend_mirage",
+    "tagline": "Голографический трюкач",
+    "description": "Мираж из тех людей, что любят выделяться."
+  },
+  {
+    "name": "Октейн",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_octane_ru.html",
+    "image": "legend_octane",
+    "tagline": "Скоростной сорвиголова",
+    "description": "В один прекрасный день Октавио Сильва заскучал. Впрочем, скука — его нормальное состояние."
+  },
+  {
+    "name": "Патфайндер",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_pathfinder_ru.html",
+    "image": "legend_pathfinder",
+    "tagline": "Идеальный разведчик",
+    "description": "Патфайндер — образец оптимизма, невзирая на обстоятельства."
+  },
+  {
+    "name": "Рампарт",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_rampart_ru.html",
+    "image": "legend_rampart",
+    "tagline": "Увлеченный моддер",
+    "description": "Рампарт — работящая хозяйка собственного бизнеса, которой хватит большой пушки и полного рюкзака запчасте."
+  },
+  {
+    "name": "Ревенант",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_revenant_ru.html",
+    "image": "legend_revenant",
+    "tagline": "Рукотворный кошмар",
+    "description": "Когда-то Ревенант был человеком. Наёмным убийцей Синдиката, лучшим из лучших."
+  },
+  {
+    "name": "Бангалор",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_bangalore_ru.html",
+    "image": "legend_bangalore",
+    "tagline": "Профессиональный солдат",
+    "description": "Бангалор родилась в семье военных. Как и ее родители и четыре старших брата, она служила в IMC и была превосходным солдатом всю свою жизнь."
+  },
+  {
+    "name": "Бладхаунд",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_bloodhound_ru.html",
+    "image": "legend_bloodhound",
+    "tagline": "Техноследопыт",
+    "description": "Во Внешних землях Бладхаунд знают как одного из величайших охотников на всем Фронтире."
+  },
+  {
+    "name": "Каустик",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_caustic_ru.html",
+    "image": "legend_caustic",
+    "tagline": "Ловчий-отравитель",
+    "description": "Когда-то Александр Нокс был одним из самых выдающихся ученых в компании «Хамберт Лабс», ведущем производителе газов-пестицидов Фронтира."
+  },
+  {
+    "name": "Крипто",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_crypto_ru.html",
+    "image": "legend_crypto",
+    "tagline": "Эксперт по разведке",
+    "description": "Специальность Крипто — секреты. Этот гениальный хакер и мастер шифрования использует свои воздушные дроны для слежки за противниками на арене Apex, оставаясь в тени."
+  },
+  {
+    "name": "Гибралтар",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_gibraltar_ru.html",
+    "image": "legend_gibraltar",
+    "tagline": "Неприступная крепость",
+    "description": "Гибралтар — кроткий великан, в котором есть и дикая сторона."
+  },
+  {
+    "name": "Валькирия",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_valkyrie_ru.html",
+    "image": "legend_valkyrie",
+    "tagline": "Крылатый мститель",
+    "description": "Смелая, дерзкая, пылкая и свирепая Кайри Имахара не гнушается давать взятки и преступать закон. В детстве она украла Титана."
+  },
+  {
+    "name": "Ваттсон",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_wattson_ru.html",
+    "image": "legend_wattson",
+    "tagline": "Незыблемый защитник",
+    "description": "Натали Ваттсон Пэкетт хорошо знают на Играх Apex, но по несколько другим причинам, нежели большую часть бойцов."
+  },
+  {
+    "name": "Рэйф",
+    "link": "https://edgenews.ru/android/apexlegends/legends/data/ru/legend_wraith_ru.html",
+    "image": "legend_wraith",
+    "tagline": "Межпространственный боец",
+    "description": "Рэйф — боец-вихрь, способный проводить смертоносные атаки, а также манипулировать пространством-временем, создавая разломы в ткани реальности."
+  }
+]

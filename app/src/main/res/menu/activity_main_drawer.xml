@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_player"
+            android:checked="true"
+            android:textStyle="bold"
+            android:icon="@drawable/user_icon"
+            android:title="@string/toolbar_player" />
+        <item
+            android:id="@+id/nav_item_statistics"
+            android:icon="@drawable/menu_news4"
+            android:title="@string/toolbar_statistics" />
+        <item
+            android:id="@+id/nav_item_compare"
+            android:icon="@drawable/ic_compare"
+            android:title="@string/toolbar_compare" />
+        <item
+            android:id="@+id/nav_item_twitter"
+            android:icon="@drawable/menu_twitter2"
+            android:title="@string/toolbar_twitter" />
+        <item
+            android:id="@+id/nav_item_donate"
+            android:icon="@drawable/menu_donate"
+            android:title="@string/toolbar_donate" />
+        <item
+            android:id="@+id/nav_item_about"
+            android:icon="@drawable/menu_about3"
+            android:title="@string/toolbar_about" />
+    </group>
+</menu>

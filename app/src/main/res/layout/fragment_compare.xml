@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <LinearLayout
+            android:id="@+id/compare_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fillViewport="true"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/spinner_one"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/dropdownListPreferredItemHeight"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/spinner_bg"
+                android:dropDownWidth="wrap_content"
+                android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                android:paddingRight="14dp"
+                android:popupBackground="@android:color/white"
+                android:popupElevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Spinner
+                android:id="@+id/spinner_two"
+                style="@style/Widget.AppCompat.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/dropdownListPreferredItemHeight"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/spinner_bg"
+                android:dropDownWidth="wrap_content"
+                android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                android:paddingRight="14dp"
+                android:popupBackground="@android:color/white"
+                android:popupElevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_donate_click"
+                android:textColor="@drawable/text_add_pressed"
+                android:text="COMPARE"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statistics_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="15dp"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:background="@drawable/background_bar">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:id="@+id/statistics_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="COMPARE"
+                    android:layout_toRightOf="@id/statistics_image"
+                    android:textColor="@color/grey_light_light"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/statistics_image"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_question"
+                    app:tint="@color/grey_light_light" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/compare_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/compare_text"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/grey_light_light"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

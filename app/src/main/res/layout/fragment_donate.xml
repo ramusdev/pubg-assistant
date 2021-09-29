@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <ImageView
+            android:id="@+id/start_imageView"
+            android:layout_width="280dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/grey_light_light"
+            android:background="@drawable/pubg_logo" />
+        <LinearLayout
+            android:id="@+id/statistics_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="15dp"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:background="@drawable/background_bar">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:id="@+id/statistics_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="DONATE"
+                    android:layout_toRightOf="@id/statistics_image"
+                    android:textColor="@color/grey_light_light"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/statistics_image"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_question"
+                    app:tint="@color/grey_light_light" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/donate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/players_text"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/grey_light_light"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="20dp"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:background="@drawable/background_bar">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/button_donate_lvl_one"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_info_click"
+                    android:textColor="@drawable/text_info_pressed"
+                    android:text="@string/donate_button_one"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/button_donate_lvl_four"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_info_click"
+                    android:textColor="@drawable/text_info_pressed"
+                    android:text="@string/donate_button_two"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <Button
+                    android:id="@+id/button_donate_lvl_three"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_info_click"
+                    android:textColor="@drawable/text_info_pressed"
+                    android:text="@string/donate_button_three"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/button_donate_lvl_two"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_info_click"
+                    android:textColor="@drawable/text_info_pressed"
+                    android:text="@string/donate_button_four"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

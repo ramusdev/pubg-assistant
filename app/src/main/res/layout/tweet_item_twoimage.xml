@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/raw_background"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/news_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-medium"
+        android:text="Вестник взрывов немного посинел. Мы все знаем, что у него взрывной характер, но, может быть, новый облик сможет уберечь его от ядерного взрыва?"
+        android:textColor="#4a4a49"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Apex Legends @PlayApex 24 июн"
+        android:textColor="@color/dark_red"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/news_image_one"
+        android:layout_below="@+id/news_text"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        ads:srcCompat="@drawable/apex_news_logo"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/news_image_two"
+        android:layout_below="@+id/news_image_one"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        ads:srcCompat="@drawable/apex_news_logo"
+        android:scaleType="centerCrop" />
+</RelativeLayout>

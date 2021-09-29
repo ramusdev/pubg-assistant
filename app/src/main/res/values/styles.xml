@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NavigationDrawerStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemTextAppearance">@style/AppNavigationViewItemTextAppearance</item>
+    </style>
+
+    <style name="AppNavigationViewItemTextAppearance" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">15sp</item>
+        <item name="itemFillColor">@color/blue_light</item>
+        <item name="itemIconTint">@color/blue_light</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.Theme.ApexLegendsAssistant.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.ApexLegendsAssistant.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="statistics_spinner" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/yellow_light</item>
+        <item name="android:text">@color/yellow_light</item>
+    </style>
+</resources>
+
