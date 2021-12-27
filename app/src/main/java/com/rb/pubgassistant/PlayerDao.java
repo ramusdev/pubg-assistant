@@ -43,6 +43,14 @@ public abstract class PlayerDao {
     @Query("SELECT player.id FROM player LIMIT 1")
     abstract Long getTopOnePlayerId();
 
+    public void deleteAllRecords() {
+        List<PlayerEntity> players = this.getAll();
+
+        for (PlayerEntity player : players) {
+            this.delete(player);
+        }
+    }
+
     /*
     @Query("SELECT * " +
             "FROM player " +

@@ -46,7 +46,7 @@
                     android:text="ABOUT"
                     android:layout_toRightOf="@id/statistics_image"
                     android:textColor="@color/grey_light_light"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
                 <ImageView
                     android:id="@+id/statistics_image"
                     android:layout_centerVertical="true"
@@ -94,7 +94,7 @@
                     android:text="LEGAL NOTICE"
                     android:layout_toRightOf="@id/statistics_image_2"
                     android:textColor="@color/grey_light_light"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
                 <ImageView
                     android:id="@+id/statistics_image_2"
                     android:layout_centerVertical="true"
@@ -142,7 +142,7 @@
                     android:text="ADDITIONAL"
                     android:layout_toRightOf="@id/statistics_image_3"
                     android:textColor="@color/grey_light_light"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
                 <ImageView
                     android:id="@+id/statistics_image_3"
                     android:layout_centerVertical="true"

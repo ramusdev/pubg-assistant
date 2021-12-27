@@ -21,6 +21,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +37,7 @@ public class CompareFragment extends Fragment {
     private Map<String, Long> playersMap = new HashMap<>();
     private static final String BUNDLE_PLAYER_ONE = "bundle_player_one";
     private static final String BUNDLE_PLAYER_TWO = "bundle_player_two";
+    private int playersSize = 0;
 
     public static CompareFragment newInstance() {
         return new CompareFragment();
@@ -73,6 +76,11 @@ public class CompareFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                if (playersSize <= 0) {
+                    showSubmitMessage("ERROR, YOU MUST FIRST TO ADD PLAYER");
+                    return;
+                }
+
                 MainActivity mainActivity = (MainActivity) getActivity();
                 MenuItem menuItem = mainActivity.navigationView.getMenu().findItem(R.id.nav_item_statistics);
                 menuItem.setChecked(true);
@@ -110,6 +118,7 @@ public class CompareFragment extends Fragment {
             @Override
             public void execute(List<PlayerEntity> players) {
 
+                playersSize = players.size();
                 String[] playersArray = new String[players.size()];
                 for (int i = 0; i < players.size(); ++i) {
                     playersArray[i] = players.get(i).getName();
@@ -124,6 +133,14 @@ public class CompareFragment extends Fragment {
 
             }
         });
+    }
+
+    private void showSubmitMessage(String message) {
+        // String text = MyApplicationContext.getAppContext().getResources().getString(R.string.statistics_message_userdeleted);
+        Snackbar snackbar = Snackbar.make(view, message, Snackbar.LENGTH_LONG);
+        snackbar.setBackgroundTint(getResources().getColor(R.color.blue_light_2));
+        snackbar.setTextColor(getResources().getColor(R.color.grey_light_light));
+        snackbar.show();
     }
 
 }

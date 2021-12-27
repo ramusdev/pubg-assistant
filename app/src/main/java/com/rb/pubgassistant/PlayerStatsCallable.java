@@ -42,6 +42,8 @@ public class PlayerStatsCallable implements Callable<Integer> {
 
         playerDao.insertPlayerWithStats(playerEntity, statsEntitiesOne);
 
+        Log.d("MyTag", playerEntity.getPlayerId());
+
         return 200;
     }
 }
