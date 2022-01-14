@@ -16,22 +16,18 @@ public class PlayerUpdateCallable implements Callable<Integer> {
         List<PlayerEntity> playerEntityList = playerDao.getPlayers();
 
         PubgClient pubgClient = new PubgClient(API_KEY);
-        // PlayerEntity playerEntity = pubgClient.getPlayerId(name);
 
         if (playerEntityList.isEmpty()) {
             return 404;
         }
 
         for (PlayerEntity playerEntity : playerEntityList) {
-            ArrayList<StatsEntity> statsEntitiesOne = pubgClient.getPlayerInfo(playerEntity.getPlayerId(), PubgSeasonsEnum.PC_2018_11.getSeasonId());
-            ArrayList<StatsEntity> statsEntitiesTwo = pubgClient.getPlayerInfo(playerEntity.getPlayerId(), PubgSeasonsEnum.PC_2018_12.getSeasonId());
-            ArrayList<StatsEntity> statsEntitiesThree = pubgClient.getPlayerInfo(playerEntity.getPlayerId(), PubgSeasonsEnum.PC_2018_13.getSeasonId());
+            ArrayList<StatsEntity> statsEntities = new ArrayList<>();
+            for (PubgSeasonsEnum pubgSeasonsEnum : PubgSeasonsEnum.values()) {
+                statsEntities.addAll(pubgClient.getPlayerInfo(playerEntity.getPlayerId(), pubgSeasonsEnum.getSeasonId()));
+            }
 
-            statsEntitiesOne.addAll(statsEntitiesTwo);
-            statsEntitiesOne.addAll(statsEntitiesThree);
-
-            // playerDao.insertPlayerWithStats(playerEntity, statsEntitiesOne);
-            playerDao.updatePlayerStats(playerEntity, statsEntitiesOne);
+            playerDao.updatePlayerStats(playerEntity, statsEntities);
         }
 
         return null;

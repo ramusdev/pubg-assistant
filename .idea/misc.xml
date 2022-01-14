@@ -8,6 +8,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AssistantPubg/app/src/main/res/layout/fragment_stats.xml" value="0.2907608695652174" />
+        <entry key="..\:/AssistantPubg/app/src/main/res/layout/spinner_dropdown.xml" value="0.36666666666666664" />
+        <entry key="..\:/AssistantPubg/app/src/main/res/layout/spinner_selected.xml" value="0.36666666666666664" />
+        <entry key="..\:/AssistantPubg/app/src/main/res/layout/statistics_spinner_row.xml" value="0.36666666666666664" />
         <entry key="..\:/pubgassitant/app/src/main/res/layout/fragment_about.xml" value="0.17119565217391305" />
         <entry key="..\:/pubgassitant/app/src/main/res/layout/fragment_compare.xml" value="0.33" />
         <entry key="..\:/pubgassitant/app/src/main/res/layout/fragment_donate.xml" value="0.17119565217391305" />

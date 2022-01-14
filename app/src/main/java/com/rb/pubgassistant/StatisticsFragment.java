@@ -151,7 +151,7 @@ public class StatisticsFragment extends Fragment implements AdapterView.OnItemSe
 
         spinner = (Spinner) view.findViewById(R.id.spinner);
         // ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(MyApplicationContext.getAppContext(), R.array.seasons_pc, R.layout.statistics_spinner_row);
-        String[] seasons = {"Season 13", "Season 12", "Season 11"};
+        String[] seasons = {"Season 15", "Season 14", "Season 13", "Season 12", "Season 11"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(MyApplicationContext.getAppContext(), R.layout.spinner_selected, seasons);
         adapter.setDropDownViewResource(R.layout.spinner_dropdown);
         // R.layout.statistics_spinner_row
@@ -162,7 +162,7 @@ public class StatisticsFragment extends Fragment implements AdapterView.OnItemSe
 
         Log.d("MyTag", "Create");
         statisticsFragmentView = ViewModelProviders.of(getActivity()).get(StatisticsFragmentView.class);
-        LiveData<PlayerStats> playerStatsLiveData = statisticsFragmentView.getPlayerStats(playerId, PubgSeasonsEnum.PC_2018_13);
+        LiveData<PlayerStats> playerStatsLiveData = statisticsFragmentView.getPlayerStats(playerId, PubgSeasonsEnum.PC_2018_15);
         playerStatsLiveData.observe(getViewLifecycleOwner(), new Observer<PlayerStats>() {
             @Override
             public void onChanged(PlayerStats playerStats) {
@@ -170,17 +170,25 @@ public class StatisticsFragment extends Fragment implements AdapterView.OnItemSe
 
                 String seasonIdString = playerStats.getStats().get(mode).getSeasonId();
                 switch (seasonIdString) {
-                    case "division.bro.official.pc-2018-13":
+                    case "division.bro.official.pc-2018-15":
                         preventSelection = true;
                         spinner.setSelection(0, true);
                         break;
-                    case "division.bro.official.pc-2018-12":
+                    case "division.bro.official.pc-2018-14":
                         preventSelection = true;
                         spinner.setSelection(1, true);
                         break;
-                    case "division.bro.official.pc-2018-11":
+                    case "division.bro.official.pc-2018-13":
                         preventSelection = true;
                         spinner.setSelection(2, true);
+                        break;
+                    case "division.bro.official.pc-2018-12":
+                        preventSelection = true;
+                        spinner.setSelection(3, true);
+                        break;
+                    case "division.bro.official.pc-2018-11":
+                        preventSelection = true;
+                        spinner.setSelection(4, true);
                         break;
                 }
 
@@ -199,12 +207,18 @@ public class StatisticsFragment extends Fragment implements AdapterView.OnItemSe
             PubgSeasonsEnum pubgSeasonsEnum = null;
             switch (i) {
                 case 0:
-                    pubgSeasonsEnum = PubgSeasonsEnum.PC_2018_13;
+                    pubgSeasonsEnum = PubgSeasonsEnum.PC_2018_15;
                     break;
                 case 1:
-                    pubgSeasonsEnum = PubgSeasonsEnum.PC_2018_12;
+                    pubgSeasonsEnum = PubgSeasonsEnum.PC_2018_14;
                     break;
                 case 2:
+                    pubgSeasonsEnum = PubgSeasonsEnum.PC_2018_13;
+                    break;
+                case 3:
+                    pubgSeasonsEnum = PubgSeasonsEnum.PC_2018_12;
+                    break;
+                case 4:
                     pubgSeasonsEnum = PubgSeasonsEnum.PC_2018_11;
                     break;
             }

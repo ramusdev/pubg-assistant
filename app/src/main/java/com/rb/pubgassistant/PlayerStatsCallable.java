@@ -17,8 +17,6 @@ public class PlayerStatsCallable implements Callable<Integer> {
 
     @Override
     public Integer call() throws Exception {
-        // Log.d("MyTag", "Inside stats");
-
         AppDatabase appDatabase = MyApplication.getInstance().getDatabase();
         PlayerDao playerDao = appDatabase.playerDao();
         StatsDao statsDao = appDatabase.statsDao();
@@ -26,23 +24,16 @@ public class PlayerStatsCallable implements Callable<Integer> {
         PubgClient pubgClient = new PubgClient(API_KEY);
         PlayerEntity playerEntity = pubgClient.getPlayerId(name);
 
-        // Log.d("MyTag", "After stats");
-        // Log.d("MyTag", playerEntity.getResponseCode());
-
         if (playerEntity == null) {
             return 404;
         }
 
-        ArrayList<StatsEntity> statsEntitiesOne = pubgClient.getPlayerInfo(playerEntity.getPlayerId(), PubgSeasonsEnum.PC_2018_11.getSeasonId());
-        ArrayList<StatsEntity> statsEntitiesTwo = pubgClient.getPlayerInfo(playerEntity.getPlayerId(), PubgSeasonsEnum.PC_2018_12.getSeasonId());
-        ArrayList<StatsEntity> statsEntitiesThree = pubgClient.getPlayerInfo(playerEntity.getPlayerId(), PubgSeasonsEnum.PC_2018_13.getSeasonId());
+        ArrayList<StatsEntity> statsEntities = new ArrayList<>();
+        for (PubgSeasonsEnum pubgSeasonsEnum : PubgSeasonsEnum.values()) {
+            statsEntities.addAll(pubgClient.getPlayerInfo(playerEntity.getPlayerId(), pubgSeasonsEnum.getSeasonId()));
+        }
 
-        statsEntitiesOne.addAll(statsEntitiesTwo);
-        statsEntitiesOne.addAll(statsEntitiesThree);
-
-        playerDao.insertPlayerWithStats(playerEntity, statsEntitiesOne);
-
-        Log.d("MyTag", playerEntity.getPlayerId());
+        playerDao.insertPlayerWithStats(playerEntity, statsEntities);
 
         return 200;
     }

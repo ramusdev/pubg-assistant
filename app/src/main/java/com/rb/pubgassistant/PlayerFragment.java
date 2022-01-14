@@ -190,15 +190,21 @@ public class PlayerFragment extends Fragment {
                 taskRunner.executeAsync(callable, new TaskRunner.TaskRunnerCallback<Integer>() {
                     @Override
                     public void execute(Integer responseCode) {
-                        if (responseCode == 404) {
-                            showSubmitMessage("PLAYER NOT FOUND");
-                        } else if (responseCode == 200){
-                            viewModel.loadData();
-                            editText.setText("");
-                            showSubmitMessage("PLAYER ADDED SUCCESSFULLY");
+                        try {
+                            if (responseCode == 404) {
+                                showSubmitMessage("PLAYER NOT FOUND");
+                            } else if (responseCode == 200) {
+                                viewModel.loadData();
+                                editText.setText("");
+                                showSubmitMessage("PLAYER ADDED SUCCESSFULLY");
 
-                            MainActivity mainActivity = (MainActivity) getActivity();
-                            mainActivity.updateDefaultPlayerTab();
+                                MainActivity mainActivity = (MainActivity) getActivity();
+                                mainActivity.updateDefaultPlayerTab();
+                            }
+                        } catch (NullPointerException e) {
+                            showSubmitMessage("TRY AGAIN AFTER 10 SECONDS");
+                            Log.d("MyTag", "Error mytag null pointer exception");
+                            e.printStackTrace();
                         }
                     }
                 });
